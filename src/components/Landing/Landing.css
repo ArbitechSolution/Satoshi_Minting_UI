@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&family=Sora:wght@500;600&display=swap');
+
+.loginBG {
+    height: 100vh;
+    background-image: url("../../new logo/Rectangle\ 71.png");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 500px;
+    background-color: #fdfdef;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+.loginCardHeading {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* 
+.loginCardPara
+{
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+text-align: center;
+margin-bottom: 20px;
+margin: 10px 0px;
+} */
+
+.loginCardStats {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 8.68px;
+    text-transform: uppercase;
+    text-shadow:
+        2px 0px 0px #2D2D2D,
+        /* Right */
+        -2px 0px 0px #2D2D2D,
+        /* Left */
+        0px 2px 0px #2D2D2D,
+        /* Bottom */
+        0px -2px 0px #2D2D2D;
+    /* Top */
+    ;
+    margin-bottom: 40px;
+}
+
+.loginCardForm {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.loginCardForm input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    text-align: center;
+}
+
+.plusminus {
+    width: 10%;
+}
+
+.loginCardForm label {
+    margin: 5px auto;
+}
+
+.loginCardButton {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 6px;
+    margin: 0px auto;
+    margin-top: 40px;
+    border: 1.5px solid black;
+    box-shadow: 2.5px 2px 0px #2D2D2D;
+    border-radius: 5px;
+    background-color: #FFBB42;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.loginCardButtonsDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.B {
+    width: 22%;
+    margin: 30px 14px;
+    box-shadow: 3px 3px 0px #62C8A9;
+}
+
+.loginCardBgPIC1 {
+    position: absolute;
+    top: 70px;
+    left: -30px;
+    width: 400px;
+}
+
+.loginCardBgPIC2 {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 300px;
+}
+
+.loginCardBgPIC3 {
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+    .loginCardBgPIC1 {
+        width: 270px !important;
+    }
+
+    .loginCardBgPIC2 {
+        width: 200px !important;
+    }
+
+    .loginCard {
+        width: 50%;
+        height: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .loginCard {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .plusminus {
+        width: 13%;
+    }
+
+    .loginCardHeading {
+        width: 100%;
+    }
+
+    .loginCardBgPIC1 {
+        top: 0;
+        width: 250px !important;
+    }
+
+    .loginCardBgPIC2 {
+        width: 150px !important;
+    }
+
+    .loginCardBgPIC3 {
+        width: 230px;
+    }
+
+    .loginCardStats {
+        font-size: 1.5rem;
+    }
+
+    .loginCardForm {
+        width: 100%;
+    }
+
+    .loginCardForm input {
+        width: 50%;
+    }
+
+    .loginCardButton {
+        width: 90%;
+        padding: 5px auto;
+        margin: 20px auto;
+    }
+
+    .B {
+        width: 40%;
+        margin: auto;
+    }
+
+    .loginCardPara {
+        font-size: 0.8rem;
+    }
+
+   
+}

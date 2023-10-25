@@ -1,0 +1,205 @@
+.mint_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../new logo/Rectangle\ 71.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mint_sky {
+    position: absolute;
+}
+
+.sky1 {
+    width: 22%;
+    top: 200px;
+    left: 0px;
+    z-index: 1;
+}
+
+.sky2 {
+    width: 40%;
+    bottom: 0;
+    right: 0px;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.mint_card_div {
+    height: 88vh;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+.mint_card_div>img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.mint_card_content {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint_card_content_cross_btn {
+    width: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 20px;
+    z-index: 1;
+}
+
+.mint_card_content_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.mint_card_content_para {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+.color_splash_bg {
+    height: 75vh;
+    background-image: url("../../new logo/colorsplash.png");
+    width: 80%;
+    margin: -40px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.mint_card {
+    width: 55%;
+    height: 45%;
+    margin: 0px auto;
+    border-top-right-radius: 5px;
+    padding-top: 65px;
+}
+
+.mint_card_image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
+}
+
+.mint_card_content_bottom {
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.mint_card_content_bottom_para {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mint_card .skeleton {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
+    background: linear-gradient(130deg, #f0f0f0 25%, #d5d5d5 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes shivering {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .mint_card_div {
+        width: 50%;
+    }
+
+    .sky1 {
+        width: 32%;
+        top: 0;
+    }
+
+    .sky2 {
+        width: 40%;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .mint_card_div {
+        width: 80%;
+        height: 450px;
+    }
+
+    .sky1 {
+        width: 40%;
+        top: 0;
+    }
+
+    .sky2 {
+        width: 80%;
+    }
+
+    .color_splash_bg {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .mint_card {
+        margin-top:10px ;
+        width: 68%;
+        height: 50%;
+    }
+
+    .mint_card_content_heading {
+        font-size: 25px;
+    }
+
+    .mint_card_content_bottom_para p {
+        font-size: 16px;
+    }
+
+}
