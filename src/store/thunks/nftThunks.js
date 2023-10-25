@@ -42,11 +42,13 @@ const walletOfOwner = createAsyncThunk(
 
       console.log(tokenURI);
 
-      const response = await axios.get(tokenURI, {
-        headers: {
-          Origin: "http://mint.satoshiair.xyz",
-        },
-      });
+      const response = await axios.get(
+        tokenURI
+        // {
+        // headers: {
+        //   Origin: "http://mint.satoshiair.xyz",
+        // },}
+      );
 
       console.log(response);
 
