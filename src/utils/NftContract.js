@@ -1,4 +1,4 @@
-export const contractAddress = "0x2c40856dA4f9e48a925e1620B528d4f2502Ff75B";
+export const contractAddress = "0xb17453FDC6D745D91b368e1B3e4cAFC5141F499C";
 export const contractABI = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
   {
@@ -83,6 +83,14 @@ export const contractABI = [
   {
     anonymous: false,
     inputs: [
+      { indexed: true, internalType: "address", name: "user", type: "address" },
+    ],
+    name: "UserWhitelisted",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
       { indexed: true, internalType: "address", name: "to", type: "address" },
       {
         indexed: true,
@@ -99,20 +107,6 @@ export const contractABI = [
     name: "MAX_SUPPLY",
     outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
     stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [{ internalType: "uint256", name: "_maxSupply", type: "uint256" }],
-    name: "UpdateMaxSupply",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [{ internalType: "uint256", name: "_maxLimit", type: "uint256" }],
-    name: "UpdateMintLimit",
-    outputs: [],
-    stateMutability: "nonpayable",
     type: "function",
   },
   {

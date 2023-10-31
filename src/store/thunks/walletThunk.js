@@ -3,17 +3,23 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 // Define the Ethereum network configuration
 const ethereumNetworkConfig = {
-  chainId: `0x${Number(97).toString(16)}`,
-  chainName: "BNB Smart Chain Testnet",
+  chainId: `0x${Number(42161).toString(16)}`,
+  chainName: "Arbitrum One",
   nativeCurrency: {
-    name: "BSC",
-    symbol: "tBNB",
+    symbol: "ETH",
     decimals: 18,
   },
+
   rpcUrls: [
-    "https://data-seed-prebsc-1-s1.binance.org:8545/",
+    "https://arb1.arbitrum.io/rpc",
+    "https://arbitrum.llamarpc.com",
+    "https://arb2.arbitrum.io/rpc",
+    "https://1rpc.io/arb",
+    "https://arb-mainnet-public.unifra.io",
+    "https://arbitrum-one.publicnode.com",
+    "https://arbitrum.meowrpc.com",
   ],
-  blockExplorerUrls: ["https://testnet.bscscan.com"],
+  blockExplorerUrls: ["https://arbiscan.io/"],
 };
 
 // Redux Thunk for connecting to the wallet
